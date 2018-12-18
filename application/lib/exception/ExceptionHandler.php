@@ -37,7 +37,7 @@ class ExceptionHandler extends Handle
         }
         else{
              // 如果是服务器未处理的异常，将http状态码设置为500，并记录日志
-            if(env('APP_DEBUG')){
+            if(config('app_debug')){
                // 调试状态下需要显示TP默认的异常页面，因为TP的默认页面
                // 很容易看出问题
               return parent::render($e);

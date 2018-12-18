@@ -10,8 +10,7 @@ use think\facade\Route;
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-
-// homeData
-Route::get('api/:version/home','api/:version.Home/getHomeData');
+Route::get('api/index','api/Index/index');
+Route::get('api/error_index','api/Index/errorIndex');
 
 
