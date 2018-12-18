@@ -9,7 +9,6 @@
 namespace app\api\controller;
 
 
-use app\api\behavior\CORS;
 use app\api\server\server;
 use app\api\validate\IdValidate;
 
@@ -36,7 +35,6 @@ class Index extends BaseController
      * @author Chenduoduo
      */
     public function errorIndex(){
-        $cors = CORS::appInit();
         // 验证层：处理请求参数
 //        (new IdValidate())->goCheck();
         // 服务层：处理复杂逻辑
